@@ -188,10 +188,10 @@ class window_Tk():
         for i in lista_testi:
             cont+=1
             if len(i)==0:
-                messagebox.showinfo(f'ATTENZIONE','NON HAI INSERITO TUTTI I DATI ')
+                messagebox.showinfo(f'ATTENTION','YOU DO NOT INSERT ALL THE DATA ')
                 break
         if cont==len(lista_testi):
-            messagebox.showinfo(f'BRAVO','DATI CARICATI!')
+            messagebox.showinfo(f'GOOD JOB','DATA UPLOADED')
         y_temp = pd.read_csv(filename,  skiprows = 1, sep = ',',  header=None)
         self.__class__.y_temp=y_temp[int(dc.get())]
         self.__class__.ordinata_x=np.arange(0,(len(self.__class__.y))/int(sf.get()),1/int(sf.get()))
