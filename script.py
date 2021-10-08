@@ -188,7 +188,7 @@ class window_Tk():
         for i in lista_testi:
             cont+=1
             if len(i)==0:
-                messagebox.showinfo(f'ATTENTION','YOU DO NOT INSERT ALL THE DATA ')
+                messagebox.showinfo(f'ATTENTION','YOU DO NOT INSERT ALL THE DATA')
                 break
         if cont==len(lista_testi):
             messagebox.showinfo(f'GOOD JOB','DATA UPLOADED')
